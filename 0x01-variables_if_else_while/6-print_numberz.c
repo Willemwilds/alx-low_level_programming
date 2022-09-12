@@ -9,12 +9,12 @@
 int main(void)
 {
 
-int numb;
-for (numb = 0; numb < 10; numb++)
+char numb;
+for (numb = '0'; numb <= '9'; numb++)
 {
 putchar(numb);
-putchar('\n');
 }
+putchar('\n');
 return (0);
 
 }
