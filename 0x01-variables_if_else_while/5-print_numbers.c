@@ -1,9 +1,11 @@
 #include <stdio.h>
+
 /**
- *main - Print numbers between 0 and 10
+ * main - Print all single digit
  *
- *Return : Always 0 (Success)
+ * Return: Always 0 (Success)
  */
+
 
 int main(void)
 {
