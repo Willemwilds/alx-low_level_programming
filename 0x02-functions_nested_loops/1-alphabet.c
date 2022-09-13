@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
-*main - check the code
+*main - Print alphabet
 *
-*Return: Always 0
+*Return: return void
 */
 
 
@@ -16,16 +16,6 @@ for (ch = 'a'; ch <= 'z'; ch++)
 putchar(ch);
 }
 putchar('\n');
-
-}
-
-
-int main(void)
-{
-
-print_alphabet();
-
-return (0);
 
 }
 
