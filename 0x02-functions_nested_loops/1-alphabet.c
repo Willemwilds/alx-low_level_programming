@@ -1,30 +1,22 @@
-int x;
 
 #include "main.h"
 
-
 /**
-*main - Print alphabet
+*print_alphabet - Print alphabet
 *
-* *Return: return void
+*Return: return void
 */
 
 
-void print_alphabet(void)
+void print_alphabet()
 {
 
 char ch;
 
 for (ch = 'a'; ch <= 'z'; ch++)
 {
-putchar(ch);
+_putchar(ch);
 }
-putchar('\n');
-
-}
-int main (void)
-{
-print_alphabet();
-return (0);
+_putchar('\n');
 
 }
