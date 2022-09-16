@@ -13,7 +13,7 @@
 int main(void)
 {
 
-	print_triangle();
+	print_number();
 
 	return (0);
 
