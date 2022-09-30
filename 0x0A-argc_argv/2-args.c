@@ -1,7 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include "main.h"
-
 
 /**
  * main - prints arguments received
@@ -18,9 +15,9 @@ int main(int argc, char *argv[])
 
 	int i;
 
-	for (i = 1; i >= 1; i++);
+	for (i = 0; i < argc; i++);
 	{
-		printf("%d\n", argv[i]);
+		printf("%s\n", argv[i]);
 	}
 
 	return (0);
