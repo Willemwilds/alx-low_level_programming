@@ -16,15 +16,21 @@
 int main(int argc, char *argv[])
 {
 
-	int i, mul = 1;
+	int i, sum = 0;
 
-	if (argc > 2 && argc < 4)
+	if (argc > 1)
 	{
+
 		for (i = 1; i < argc; i++)
+		{
+			sum += atoi(argv[i]);
+		}
+		printf("%d\n", sum);
+	}
+	else if (argc < 2)
+	{
+		printf("%d\n", 0);
 
-		mul *= atoi(argv[i]);
-
-	printf("%d\n", mul);
 	}
 	else
 	{
