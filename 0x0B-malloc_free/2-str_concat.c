@@ -34,8 +34,19 @@ char *str_concat(char *s1, char *s2)
 	if (new_str == NULL)
 		return (NULL);
 
-	new_str[i] = s1[i];
-	new_str[j] = s2[j];
+	i = 0, j = 0;
+
+	while (s1[i] != '\0')
+	{
+		new_str[i] = s1[i];
+		i++;
+	}
+	while (s2[j] != '\0')
+	{
+		new_str[i] = s2[j];
+		i++;
+		j++;
+	}
 	new_str[j] = '\0';
 
 	return (new_str);
