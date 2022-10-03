@@ -4,7 +4,7 @@
 
 /**
  * _strdup - points to memory of a duplicated string
- * @str - original string
+ * @str: original string
  *
  * Return: NULL or pointer to duplicated string
  */
