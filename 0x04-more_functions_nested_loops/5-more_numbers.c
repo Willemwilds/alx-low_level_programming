@@ -10,23 +10,16 @@
 
 void more_numbers(void)
 {
+	int a, b;
 
-	int x;
-	int y;
-
-	for (x = 0; x < 10; x++)
+	for (a = 1; a <= 10; a++)
 	{
-		for (y = 0; y <= 14; y++)
-		{	
-			_putchar(y);
-		
+		for (b = 0; b <= 14; b++)
+		{
+			if (b >= 10)
+				_putchar(b / 10 + '0');
+			_putchar(b % 10 + '0');
 		}
-
-		_putchar(x);
+		_putchar('\n');
 	}
-
-	_putchar('\n');
-
-
-
 }

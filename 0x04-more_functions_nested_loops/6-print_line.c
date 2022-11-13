@@ -2,7 +2,7 @@
 
 /**
 *print_line- Draws line
-*
+*@n: integer
 *Return: Always 0.
 */
 
@@ -10,20 +10,15 @@
 
 void print_line(int n)
 {
+	int a = '_';
+	int b;
 
-	char c = '-';
-
-	for (c <= 0; c <= 'n'; c++)
+	for (b = 0; b < n; b++)
 	{
-		if (c <= 0)
+		if (n <= 0)
 			_putchar('\n');
 		else
-			_putchar(c);
-
-		_putchar(c);
-
+			_putchar(a);
 	}
-
-
-
+	_putchar('\n');
 }
