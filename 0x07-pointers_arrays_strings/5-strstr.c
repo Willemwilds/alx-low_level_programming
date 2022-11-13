@@ -9,20 +9,24 @@
  */
 
 
-
-
-char *_strstr(char *haystack, char *needle)
+char  *_strstr(char *haystack, char *needle)
 {
+char *str1, *str2; /*Declaring variables*/
 
-	int i;
+while (*haystack != '\0')
+{
+str1 = haystack; /*values*/
+str2 = needle;
 
-	for (i = 0; haystack[i] != '\0'; i++)
-	{
-		if (haystack[i] == *(needle + 1))
-
-			return (needle);
-
-	}
-	return (0);
-
+/*Star WHILE*/
+while (*haystack != '\0' && *str2 != '\0' && *haystack == *str2)
+{
+haystack++;
+str2++;
+}
+if (*str2 == '\0')
+return (str1);
+haystack = str1 + 1;
+}
+return (0);
 }
