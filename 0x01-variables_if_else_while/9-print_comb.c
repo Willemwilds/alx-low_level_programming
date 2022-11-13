@@ -1,22 +1,21 @@
 #include <stdio.h>
 /**
- * main - Prints numbers with coma
- *
- * Return: Always 0 (Success)
+ *main - main function
+ *Return: 0
  */
-
 int main(void)
 {
+	int a;
 
-int num;
-
-for (num = '0'; num <= '9'; num++)
-{
-putchar(num);
-if (num < '9')
-putchar(',');
-putchar(' ');
-}
-return (0);
-
+	for (a = '0'; a <= '9'; a++)
+	{
+		putchar(a);
+		if (a <= '8')
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	putchar('\n');
+	return (0);
 }
