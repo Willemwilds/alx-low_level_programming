@@ -1,28 +1,30 @@
 #include "main.h"
 /**
 *leet- converts string to uppercase
-*@n: input
+*@a: input
 *
 *Return: char
 */
 
 
 
-char *leet(char *n)
+char *leet(char *a)
 {
-	int i, j;
-	char s1[] = "aAeEoOtTIL";
-	char s2[] = "4433007711";
+	char s[] = "aAeEoOtTlL";
+	char p[] = "4433007711";
 
-	for (i = 0; n[i] != '\0'; i++)
+	int i = 0;
+	int j = 0;
+
+	while (a[i] != '\0')
 	{
-		for (j = 0; j < 10; j++)
+		for (j = 0; s[j] != '\0' && a[i] != s[j]; j++)
+			;
+		if (j < 10)
 		{
-			if (n[i] == s1[j])
-			{
-				n[i] = s2[j];
-			}
+			a[i] = p[j];
 		}
+		i++;
 	}
-	return (n);
+	return (a);
 }

@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-*_strcat- concatenates two strings
+*_strncat- concatenates strings
 *@dest: input
 *@src: input
-*@int: input
+*@n: input
 *
 *Return: void
 */
@@ -11,34 +11,23 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
+	int j = 0;
+	int i = 0;
 
-	int x;
-
-	int y;
-
-	x = 0;
-	while (dest[x] != '\0')
+	while (dest[i] != '\0')
 	{
-		x++;
-
+		i++;
 	}
 
-	y = 0;
-	while (y < n && src[y] != '\0')
+	for (j = 0; src[j] != '\0'; j++)
 	{
+		if (j < n)
+		{
+			dest[j + i] = src[j];
+		}
+		else
 
-		dest[x] = src[y];
-
-		x++;
-
-		y++;
+			dest[j + i] = '\0';
 	}
-	dest[x] = '\0';
 	return (dest);
-
-
-
-
-
-
 }
