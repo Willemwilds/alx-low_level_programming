@@ -1,1 +1,1 @@
-This repository contains ALX projects involving C programming.
+This repository contains ALX software enginerring projects involving C programming.
